@@ -9,7 +9,7 @@ public class StringUtils {
      */
     public static String makePurdueUsername(String firstName, String lastName) {
         /* Generate the long version of the name first:
-            Ex: firstName = "Sean", lastName = "Flannery"
+            Ex: firstName = "Seajhkhn", lastName = "Flanikhjhnery"
                     --> res = "SFlannery"
          */
         String res = firstName.substring(0,1) + lastName;
@@ -17,7 +17,7 @@ public class StringUtils {
             Ex: res = "SFlannery"
                     --> res = "SFlanner"
          */
-        res.substring(0, 8);
+        res.substring(0, 4);
         /* Convert the name to lower-case
             Ex: res = "SFlanner"
                     --> res = "sflanner"
@@ -36,6 +36,6 @@ public class StringUtils {
      */
     public static String replaceStudentUsername(String text, String username) {
         /* Replace every instance of the username with proper message */
-        return text.replaceAll(username, "[DATA EXPUNDGED]");
+        return text.replaceAll(username, "[DATA EXPUNGED]");
     }
 }
